@@ -3,7 +3,9 @@ abstract: 'Serializes and deserializes Path::Class objects as file:// URI'
 author:
   - 'Tatsuhiko Miyagawa <miyagawa@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 7.04
+  Module::Build::Tiny: 0.039
+  Test::Base: 0
+  Test::More: 0
 configure_requires:
   Module::Build::Tiny: 0.039
 dynamic_config: 0
@@ -23,16 +25,17 @@ no_index:
     - examples
 requires:
   Exporter::Lite: 0
-  ExtUtils::MakeMaker: 7.04
+  Module::Build::Tiny: 0.039
   Path::Class: 0
   Scalar::Util: 0
+  Test::Base: 0
   Test::More: 0
   URI: 0
 resources:
   bugtracker: https://github.com/zmughal/p5-Path-Class-URI/issues
   homepage: https://github.com/zmughal/p5-Path-Class-URI
   repository: https://github.com/zmughal/p5-Path-Class-URI.git
-version: 0.06
+version: 0.07
 x_contributors:
   - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
   - 'Zakariyya Mughal <zaki.mughal@gmail.com>'
